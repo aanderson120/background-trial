@@ -1,1 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: black;
+}
+#otherBlock {
+    background-color: black;
+    position: absolute;
+    height: 330px;
+    width: 450px;
+    top: -1px;
+    left: 476px;
+    z-index: 1;
+}
+#game{
+    background-image: url(./images/background.jpg);
+    position: absolute;
+    z-index: -5;
+    margin: 2%;
+    width: 475px;
+    height: 315px;
+    border: 1px solid black;
+    z-index: -10;
+}
+#character {
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    top: 266px;
+    left: 50px;
+}
+.animate{
+    animation: jump 500ms;
+}
+@keyframes jump {
+    0% {top: 150px}
+    30% {top: 100px}
+    70% {top: 100px}
+    100% {top: 150px}
+}
 
+.bush1 {
+    width: 325px;
+    position: relative;
+    top: 163px;
+    /* left: 176px; */
+    z-index: -1;
+    animation: block 5s infinite linear;
+}
+.bush2 {
+    height:70px;    
+    position: relative;
+    top: 170px;
+    /* left: 140px; */
+    z-index: -3;
+    animation: block 6s infinite linear;
+}
+.bush3 {
+    height:100px;    
+    position: relative;
+    top: -7px;
+    /* left: 560px; */
+    z-index: -4;
+    animation: block 7s infinite linear;
+}
+.bush4 {
+    height:125px;    
+    position: relative;
+    top: -9px;
+    left: 176px;
+    /* left: 515px; */
+    z-index: -5;
+    animation: block 8s infinite linear;
+}
+.bush5 {
+    height:165px;    
+    position: relative;
+    top: 3px;
+    /* left: 525px; */
+    z-index: -6;
+    animation: block 9s infinite linear;
+}
+
+#block {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 242px;
+    left: 455px;
+    z-index:1;
+    animation: block 2s infinite linear;
+}
+
+@keyframes block {
+    0%{left: 480px;}
+    100%{left: -40px;}
+}
